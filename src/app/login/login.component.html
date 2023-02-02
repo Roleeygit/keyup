@@ -1,0 +1,18 @@
+<div class="loginForm">
+    <h2>Bejelentkezés</h2>
+    <div class="mt-3">
+        <input type="text"
+        placeholder="felhasználónév"
+        [formControl]="username"
+        class="form-control"
+        >
+    </div>
+    <div class="mt3">
+        <input type="password"
+        placeholder="jeszó"
+        [formControl]="password"
+        class="form-control"
+        (keyup)="onKeyup($event)"
+        >
+    </div>
+</div>
